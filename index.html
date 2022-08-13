@@ -198,7 +198,7 @@ animation: header2 9s ease-in-out infinite;
         </div>
     </div>
 <style>
-      h1 {
+   .time {
         font-size:70px;
         margin:0;
         color:orange;
@@ -207,7 +207,7 @@ animation: header2 9s ease-in-out infinite;
         font-family: "Muli", sans-serif;
       }
 
-      p {
+.date{
         color: rgba(247, 131, 131, 0.8);
         letter-spacing:2px;
         margin:0;
@@ -216,9 +216,9 @@ animation: header2 9s ease-in-out infinite;
         font-family: "Muli", sans-serif;
       }
 </style>
-    <p>This page was viewed</p>
-    <h1 id="count">0</h1>
-   <p>times</p>
+    <p class="date">This page was viewed</p>
+    <h1 id="count time">0</h1>
+   <p class="date">times</p>
     <script>
       const countEl = document.getElementById("count");
       countvisits();
