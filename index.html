@@ -138,6 +138,9 @@ animation: header2 9s ease-in-out infinite;
     height: 20vh;
 
 }
+    body{
+         @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+    }
 .parame{
     text-align: center;
     color: rgb(131, 122, 122);
@@ -194,6 +197,42 @@ animation: header2 9s ease-in-out infinite;
             </div>
         </div>
     </div>
+<style>
+      h1 {
+        font-size:70px;
+        margin:0;
+        color:orange;
+        align-items: center;
+        justify-content: center;
+        font-family: "Muli", sans-serif;
+      }
+
+      p {
+        color: rgba(247, 131, 131, 0.8);
+        letter-spacing:2px;
+        margin:0;
+         align-items: center;
+        justify-content: center;
+        font-family: "Muli", sans-serif;
+      }
+</style>
+    <p>This page was viewed</p>
+    <h1 id="count">0</h1>
+   <p>times</p>
+    <script>
+      const countEl = document.getElementById("count");
+      countvisits();
+
+      function countvisits() {
+        fetch('https://api.countapi.xyz/update/danbahadur/danbahadur.com/?amount=1')
+          .then((res) => res.json())
+          .then((res) => {
+            countEl.innerHTML = res.value;
+          });
+      }
+    </script>
+
+
     <footer class="footersite">
 
 <div>
